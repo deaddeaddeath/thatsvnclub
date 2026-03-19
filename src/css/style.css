@@ -6,6 +6,10 @@ border:0;
 outline:0;
 font-size: 20px;
 }
+/* this is such a scuffed fix for making everything smaller */
+html {
+  zoom: 0.85;
+}
 /* add fonts */
 @font-face{
 font-family:atkinson;
