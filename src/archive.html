@@ -1,0 +1,15 @@
+---
+layout: layoutpost.html
+title: 'Home'
+description: that's vn club!
+permalink: /archive.html
+stylebb: css/style.css
+---
+<section class="blogbox">
+  <h1>Archive</h1>
+  <section class="archiveposts">
+{% for post in collections.post | reverse %}
+<div class="archiveprelink"><p><span class="postdate">{{ page.date | postDate}}</span></div><div class="archivelink"><a href="{{ post.url }}" class="archivepost">{{ post.data.title }}<span id="postsep"> - </span>{{ post.data.description }}...</a></p></div>
+{% endfor %}
+  </section>
+</section>

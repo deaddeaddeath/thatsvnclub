@@ -121,6 +121,12 @@ opacity: .75;
 font-size: clamp(1.25rem, 3vw, 2.5rem);
 color: #ded;
 }
+#archivelink {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: center;
+
+}
 /* styles latest.html partial */
 .latest {
 background-color: #181818;
@@ -258,4 +264,16 @@ margin: 0 auto 5px;
 }
 .postnav {
   font-size: clamp(1.25rem, 2vw, 2rem);
+}
+/* styles archive page */
+.archiveprelink {
+  text-align: center;
+}
+.archiveposts p {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.archivelink {
+  border-bottom: solid 1px #fc313f;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
 }
