@@ -2,6 +2,7 @@
 layout: layoutpost.html
 stylebb: css/style.css
 title: "That's VN Club! 2!"
+tags: ["fag", "catgirl"]
 description: Now we're fucking cooking baby
 permalink: /{{ title | slugify }}.html
 ---

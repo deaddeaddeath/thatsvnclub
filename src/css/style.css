@@ -122,6 +122,7 @@ font-size: clamp(1.25rem, 3vw, 2.5rem);
 color: #ded;
 }
 #archivelink {
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
   display: flex;
   margin-top: 3vh;
   justify-content: center;
@@ -276,4 +277,21 @@ margin: 0 auto 5px;
 .archivelink {
   border-bottom: solid 1px #fc313f;
   font-size: clamp(1.25rem, 3vw, 2.5rem);
+}
+.taglist ul {
+  margin: 3vh 3vw;
+}
+.taglist li {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid #ded;
+  padding: 3px 3px;
+  width: fit-content;
+  display: inline-flex;
+}
+.postbytag {
+  display: flex;
+  margin: 3vh auto;
+}
+.postbytag li {
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }

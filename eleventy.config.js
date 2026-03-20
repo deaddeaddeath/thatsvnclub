@@ -19,6 +19,14 @@ export default function (eleventyConfig) {
       day: "numeric",
     });
   });
+eleventyConfig.addFilter('sortObjectByKey', (collection) => {
+  const entries = Object.entries(collection);
+  const toReturn = entries.sort((entry1, entry2) => {
+    if (entry1[0] <= entry2[0]) return -1;
+    else return 1;
+  });
+  return toReturn;
+});
 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"

@@ -5,6 +5,17 @@ description: that's vn club!
 permalink: /archive.html
 stylebb: css/style.css
 ---
+<h1>Tags</h1>
+
+<section class="taglist">
+      <ul>
+
+      {% set orderedCollection = collections | sortObjectByKey  %}
+      {%- for tag, posts in orderedCollection %}
+        <li><a href="/tags/{{tag | slugify}}/"><strong>{{ tag }}</strong></a> - {{ posts | length }} posts</li>
+      {%- endfor -%}
+
+      </ul>
 <section class="blogbox">
   <h1>Archive</h1>
   <section class="archiveposts">
