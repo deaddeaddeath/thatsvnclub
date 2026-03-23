@@ -307,3 +307,42 @@ display: inline;
 .postbytag li {
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
+/* styles projects page */
+.projlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+  margin: 5vh 5vw;
+}
+@media screen and (max-width: 620px) {
+  .projlist {
+    grid-template-columns: 1fr;
+  }
+}
+.projitem {
+padding-top: 10px;
+background-color: var(--clrc);
+border: solid 1px var(--clra);
+border-radius: 10px;
+display: flex;
+flex-direction: column!important;
+align-items: center;
+}
+.projitem h3 {
+font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+border-bottom: 1px dotted var(--clrd);
+}
+.projitem img {
+  margin-bottom: 2vh;
+}
+.projitem a {
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+  margin-bottom: none;
+}
+.projitem p {
+  border-bottom: none;
+  margin: none;
+  padding: none;
+}

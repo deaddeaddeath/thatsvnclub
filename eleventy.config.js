@@ -13,7 +13,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("filterTags", (items) => {
     const newTags = [];
     for (let i of items) {
-		if (i[0] != 'post' && i[0] != 'posts' && i[0] != 'all') {
+		if (i[0] != 'projects' && i[0] != 'post' && i[0] != 'posts' && i[0] != 'all') {
         newTags.push(i);
       }
     }
