@@ -1,12 +1,11 @@
 ---
-layout: layoutpost.html
-title: 'Home'
+layout: layoutproj.html
+title: 'Projects'
 description: that's vn club!
 permalink: /projects.html
 stylebb: css/style.css
 ---
 <section class="projbox">
-  <h1>Projects</h1>
   <ol class="projlist">
 {% for project in collections.projects | reverse %}
 <li class="projitem">{{ project.templateContent | safe }}</li>

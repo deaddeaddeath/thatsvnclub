@@ -20,6 +20,10 @@ src: url('fonts/constanb.ttf');
 font-family:profont;
 src: url('fonts/profont.ttf');
 }
+@font-face{
+font-family:zunka;
+src: url('fonts/zunka.otf');
+}
 /* from here down is where stuff actually starts getting styled */
 /* this is such a scuffed fix for making everything smaller */
 :root {
@@ -85,6 +89,9 @@ font-size: clamp(1rem, 4vw, 2.5rem);
 display: inline-flex;
 justify-content: center;
 margin: 1vh 2vw;
+}
+.navlist li {
+  font-family: zunka;
 }
 /* styles blog list on index.html */
 .blogbox {
@@ -310,9 +317,14 @@ display: inline;
 /* styles projects page */
 .projlist {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3vw;
   margin: 5vh 5vw;
+}
+@media screen and (max-width: 1200px) {
+  .projlist {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 620px) {
   .projlist {
@@ -328,6 +340,9 @@ display: flex;
 flex-direction: column!important;
 align-items: center;
 }
+.projitem h2 {
+  text-align: center;
+}
 .projitem h3 {
 font-size: clamp(1.25rem, 2.5vw, 1.75rem);
 border-bottom: 1px dotted var(--clrd);
@@ -337,7 +352,7 @@ border-bottom: 1px dotted var(--clrd);
 }
 .projitem a {
   display: flex;
-  max-width: 450px;
+  max-width: 350px;
   flex-direction: column;
   margin-bottom: none;
 }
