@@ -440,6 +440,7 @@ border-bottom: 1px dotted var(--clrd);
 }
 .projitem h4 {
 font-size: clamp(1rem, 2vw, 1.50rem);
+font-weight: lighter;
 color: var(--clrd);
 border-bottom: 1px double var(--clrd);
   -webkit-text-stroke: unset;
