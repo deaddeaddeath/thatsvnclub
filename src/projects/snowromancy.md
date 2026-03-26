@@ -1,5 +1,6 @@
 ---
 title: snowcorpse necromancy
+date: 2025-06-13
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/snowromancy.webp
 gamelink: https://nadianova.neocities.org/snowromancy

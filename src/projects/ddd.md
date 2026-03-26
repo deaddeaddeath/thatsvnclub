@@ -1,5 +1,6 @@
 ---
 title: Divine Despair Deviance
+date: 2024-06-30
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/ddeviance.webp
 gamelink: https://nadianova.neocities.org/divinedespairdeviance

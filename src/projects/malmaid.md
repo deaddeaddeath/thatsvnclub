@@ -1,5 +1,6 @@
 ---
 title: Malcatras' Maiden
+date: 2024-05-23
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/malmaid.webp
 gamelink: https://nadianova.neocities.org/malcatrasmaiden
