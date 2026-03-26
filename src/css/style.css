@@ -442,6 +442,7 @@ border-bottom: 1px dotted var(--clrd);
 font-size: clamp(1rem, 2vw, 1.50rem);
 color: var(--clrd);
 border-bottom: 1px double var(--clrd);
+  text-shadow: none;
 }
 .projitem img {
   margin-bottom: 2vh;
