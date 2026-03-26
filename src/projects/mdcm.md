@@ -1,5 +1,5 @@
 ---
-title: Metal doll Crystal Moth
+title: Metal Doll Crystal Moth
 date: 2026-01-12
 author: Kyou System
 gamelink: https://kyousystem.itch.io/metal-doll-crystal-moth-demo
