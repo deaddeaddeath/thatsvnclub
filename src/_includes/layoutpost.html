@@ -21,6 +21,7 @@
     {{ content | safe }}
     {% endblock %}
     <center>
+    {{ page.date | postDate}}
       <ol class="posttags">
         {% for tag in tags %}
         {% if tag !== 'post' %}
