@@ -2,11 +2,12 @@
 title: doomsday dreamgirl
 date: 2021-11-30
 author: nadianova
-imglink: https://nadianova.neocities.org/games/icons/doomsday.gif
 gamelink: https://nadianova.itch.io/doomsday-dreamgirl
 description: what if we kissed at the end of the world
+filetype: gif
 ---
 ## {{ title }}
 ### {{ author }}
-[![]({{ imglink }})]({{ gamelink }})
-[{{ description }}]({{ gamelink }})
+#### {{ date | postDate }}
+![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
+{{ description }}

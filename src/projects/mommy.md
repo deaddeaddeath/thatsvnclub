@@ -1,12 +1,12 @@
 ---
-title: 'the Mommy Prometheus/prototype'
+title: 'The Mommy Prometheus/prototype'
 date: 2023-07-17
 author: thursday rain
-imglink: https://img.itch.zone/aW1nLzEyODczNzg5LnBuZw==/315x250%23c/1HVb9x.png
-gamelink: https://thursdayrain.itch.io/themommyprometheus
 description: a short eroguro visual novel about being put together, piece by piece
+filetype: webp
 ---
 ## {{ title }}
 ### {{ author }}
-[![]({{ imglink }})]({{ gamelink }})
-[{{ description }}]({{ gamelink }})
+#### {{ date | postDate }}
+![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
+{{ description }}

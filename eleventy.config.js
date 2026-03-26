@@ -45,7 +45,18 @@ eleventyConfig.addFilter('sortObjectByKey', (collection) => {
   });
   return toReturn;
 });
-
+eleventyConfig.addFilter('makeuri',function (value) {
+  if (typeof value !=='string') return value;
+  return encodeURI(value);
+});
+  eleventyConfig.addFilter("removeslashes", function(value) {
+    if (typeof value !== "string") return value;
+    return value.replace(/[\/.:]/g, '');
+  });
+// eleventyConfig.addFilter('removeslashes', function(value) {
+//   if (typeof value !== 'string') return value;
+//   return encodeURI(value.replace(/[\/.:]/g, ''));
+// });
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",

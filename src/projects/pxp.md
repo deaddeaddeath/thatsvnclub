@@ -2,11 +2,12 @@
 title: 'PASSENGER x PRINCESS: NO HOPE // MUST DIE'
 date: 2025-11-22
 author: Lunaticker
-imglink: https://img.itch.zone/aW1nLzI0MTk3MjA3LnBuZw==/315x250%23c/qmElmP.png
 gamelink: https://lunaticker.itch.io/passenger-x-princess
 description: This can only end one way
+filetype: webp
 ---
 ## {{ title }}
 ### {{ author }}
-[![]({{ imglink }})]({{ gamelink }})
-[{{ description }}]({{ gamelink }})
+#### {{ date | postDate }}
+![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
+{{ description }}

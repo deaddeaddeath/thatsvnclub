@@ -2,11 +2,12 @@
 title: snowcorpse necromancy
 date: 2025-06-13
 author: nadianova
-imglink: https://nadianova.neocities.org/games/icons/snowromancy.webp
 gamelink: https://nadianova.neocities.org/snowromancy
 description: im a boy. im a corpse. im a girl. im a doll. snowromancy.
+filetype: webp
 ---
 ## {{ title }}
 ### {{ author }}
-[![]({{ imglink }})]({{ gamelink }})
-[{{ description }}]({{ gamelink }})
+#### {{ date | postDate }}
+![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
+{{ description }}

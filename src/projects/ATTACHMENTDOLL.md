@@ -2,11 +2,12 @@
 title: ATTACHMENTDOLL
 date: 2025-12-31
 author: deaddeaddeath
-imglink: https://www.deaddeaddeath.red/img/ATTACHMENTDOLL/gameimage.webp
 gamelink: https://www.deaddeaddeath.red/attachmentdoll.html
 description: RETURNING TO MOTHER'S EMBRACE
+filetype: webp
 ---
 ## {{ title }}
 ### {{ author }}
-[![]({{ imglink }})]({{ gamelink }})
-[{{ description }}]({{ gamelink }})
+#### {{ date | postDate }}
+![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
+{{ description }}

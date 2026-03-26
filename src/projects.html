@@ -8,7 +8,7 @@ stylebb: css/style.css
 <section class="projbox">
   <ol class="projlist">
 {% for project in collections.projects | reverse %}
-<li class="projitem">{{ project.templateContent | safe }}</li>
+<li class="projitem"><a href="{{ project.data.gamelink }}" class="projlink">{{ project.templateContent | safe }}</a></li>
 {% endfor %}
   </ol>
 </section>
