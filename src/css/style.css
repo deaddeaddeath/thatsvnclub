@@ -272,12 +272,17 @@ margin: 0 auto 5px;
 .postpage h1 {
   text-align: center;
   border-bottom: solid 1px var(--clra);
+  margin-bottom: 10px;
 }
 .postpage p {
   font-size: clamp(1.25rem, 2vw, 2rem);
-  margin: 2vw 3vh 2vw 3vh;
+  margin: 0.5vw 3vh 0.5vw 3vh;
   padding-bottom: 3vh;
-  border-bottom: solid 1px var(--clra);
+}
+.centerline {
+  border-top: solid 1px var(--clra);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .postnav {
   font-size: clamp(1.25rem, 2vw, 2rem);

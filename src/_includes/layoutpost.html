@@ -20,8 +20,7 @@
       {% block content %}
     {{ content | safe }}
     {% endblock %}
-    <center>
-    {{ page.date | postDate}}
+    <center class="centerline">
       <ol class="posttags">
         {% for tag in tags %}
         {% if tag !== 'post' %}
