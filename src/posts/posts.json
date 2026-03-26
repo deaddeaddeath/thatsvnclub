@@ -1,3 +1,6 @@
 {
+  "layout": "layoutpost.html",
+  "stylebb": "css/style.css",
+  "permalink": "/{{ title | slugify }}.html",
   "tags": "post"
 }
