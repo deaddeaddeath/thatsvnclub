@@ -37,9 +37,18 @@ font-family: atkinson;
 background-color: var(--clrc);
 color: var(--clrd); 
 zoom: 0.85;
+scrollbar-color: var(--clra) var(--clrc);
 }
 ol {
   list-style-type: none;
+}
+
+h3, h4, h5, h6 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-family: constan;
+  -webkit-text-stroke: 1px var(--clrb);
+  color: var(--clra);
+  text-shadow: 0 0 3px var(--clra);
 }
 
 h1 {
@@ -262,23 +271,99 @@ margin: 0 auto 5px;
   text-align: center;
 }
 /* styles post page */
+main:has(.postpage) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .postpage {
   background-color: var(--clrb);
-  width: fit-content;
-  min-width: 75%;
-  display: grid;
-  margin: 5vh auto;
+  width: 80%;
+  margin: 5%;
+  font-size: 30px;
 }
-.postpage h1 {
+.postpage>h1,
+.postpage>h2,
+.postpage>h3,
+.postpage>h4,
+.postpage>h5,
+.postpage>h6 {
   text-align: center;
   border-bottom: solid 1px var(--clra);
   margin-bottom: 10px;
+  margin-top: 0;
 }
+
 .postpage p {
-  font-size: clamp(1.25rem, 2vw, 2rem);
-  margin: 0.5vw 3vh 0.5vw 3vh;
-  padding-bottom: 3vh;
+  font-size: 1em;
+  margin: 1em;
 }
+
+.postpage strong {
+  font-weight: bold;
+}
+
+.postpage em {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.postpage blockquote {
+  background-color: var(--clrc);
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.postpage blockquote>blockquote {
+  background-color: var(--clrb);
+}
+
+.postpage ul,
+.postpage ol,
+.postpage li {
+  font-size: 1em;
+}
+
+.postpage ul,
+.postpage ol {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 1.5em;
+}
+
+.postpage ul ul,
+.postpage ol ol,
+.postpage ul ol,
+.postpage ol ul {
+  list-style-type: square;
+}
+
+.postpage pre {
+  background-color: var(--clrd);
+  color: var(--clrc);
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  overflow: auto;
+  scrollbar-color: var(--clrc) var(--clrd);
+}
+.postpage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+}
+.postpage iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .centerline {
   border-top: solid 1px var(--clra);
   padding-top: 10px;

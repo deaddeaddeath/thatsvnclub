@@ -72,7 +72,7 @@ To create a link, like, for example, [one to my site](https://bagenzos.house), j
 ## Images
 Images are fundamental to any blog, right?  
 It's similar to the link syntax, except the square brackets are for alt text, and the round brackets are for the file path. Also, don't forget the exclamation mark!
-![A delicious bowl of strawberries](/assets/images/bowl_of_berries.jpg)
+![A delicious bowl of strawberries](/img/members/deaddeaddeath.webp)
 
 ## HTML
 <p>Finally, when Markdown just doesn't cut it, you CAN write HTML, if you really want to. <em>Any valid HTML is also valid Markdown.</em></p>
