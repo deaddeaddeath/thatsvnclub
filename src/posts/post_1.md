@@ -1,10 +1,7 @@
 ---
-layout: layoutpost.html
-stylebb: css/style.css
 title: "that's vn club!"
 tags: ["nadianova", "thursday"]
 description: Now we're fucking cooking baby
-permalink: /{{ title | slugify }}.html
 ---
 # {{ page.date | postDate}} - who's that? that's vn club!
 oh i have the microphone now. oh okay. well hello its me. im a little keyboard maid. nadia nova. hii. hi hiii. im a pervert and i cant stop thinking about putting cute girls into situations that is my right as an artist. when i lock in i wear my uniform and put on my puppy ears and tail. it raises my art skill by +200%
